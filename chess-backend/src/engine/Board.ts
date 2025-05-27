@@ -49,4 +49,12 @@ export class Board{
         ).join("\n"));
     }
 
+    clone(): Board {
+        const newBoard = new Board();
+        newBoard.board = this.board.map(row =>
+            row.map(piece => piece ? { ...piece } : null)
+        );
+        return newBoard;
+    }
+
 }
