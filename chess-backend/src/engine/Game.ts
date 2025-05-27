@@ -1,5 +1,5 @@
 import { Board } from "./Board";
-import { MoveValidator } from "./MoveValidator";
+import { MoveValidator } from "./rules/MoveValidator";
 import { Position, Color } from "chess-shared/types";
 
 export class Game {
